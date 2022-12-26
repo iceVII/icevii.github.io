@@ -107,7 +107,7 @@
     color: #ffffff;
     text-shadow: 0 0 10px #ffffff;
     background-color: transparent;
-    object-fit: cover;
+    /* object-fit: cover; */
     transform: rotate(45deg);
     animation: shake 5.0s linear infinite;
   }
