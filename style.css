@@ -109,11 +109,11 @@
     background-color: transparent;
     /* object-fit: cover; */
     text-shadow: 5px 5px 5px #000;
-    transform: rotate(45deg);
-    animation: shake 5.0s linear infinite;
+    /* transform: rotate(45deg);
+    animation: shake 5.0s linear infinite; */
   }
 
-  @keyframes shake {
+  /* @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(45deg); }
     10% { transform: translate(-1px, -2px) rotate(44deg); }
     20% { transform: translate(-3px, 0px) rotate(46deg); }
@@ -125,7 +125,7 @@
     80% { transform: translate(-1px, -1px) rotate(46deg); }
     90% { transform: translate(1px, 2px) rotate(45deg); }
     100% { transform: translate(1px, -2px) rotate(44deg); }
-  }
+  } */
   
   p {
     font-size: 24px;
@@ -147,6 +147,7 @@
   
   button {
     background-color: transparent;
+    transform-origin: top left;
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 15px 32px;
