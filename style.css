@@ -107,8 +107,8 @@
     text-shadow: 0 0 10px #ffffff;
     background-color: transparent;
     object-fit: cover;
-    transform: rotate(45deg);
-    animation: shake 5.0s linear infinite;
+    /* transform: rotate(45deg); */
+    animation: shake 0.5s linear infinite;
   }
 
   @keyframes shake {
