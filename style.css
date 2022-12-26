@@ -62,28 +62,3 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px #ffa07a;
   }
-  
-  This CSS stylesheet uses a dark gray background color and white text color, with bold and vibrant accents in shades of orange. It also includes exaggerated design elements such as large font sizes, box shadows, and rounded images.
-  
-  To use this CSS stylesheet, you would include it in the head of your HTML document like this:
-  
-  <html>
-    <head>
-      <title>My Cool Website</title>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <style>
-        /* CSS code goes here */
-      </style>
-    </head>
-    <body>
-      <!-- HTML content goes here -->
-    </body>
-  </html>
-  
-  You can also include the CSS code in a separate file and link to it from your HTML document using the link element:
-  
-  <html>
-    <head>
-      <title>My Cool Website</title>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">  
