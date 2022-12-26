@@ -109,7 +109,7 @@
     text-shadow: 0 0 10px #ffffff;
     background-color: transparent;
     /* object-fit: cover; */
-    text-shadow: 5px 5px 5px #000;
+    text-shadow: 1px 1px 1px rgb(74, 74, 74);
     /* transform: rotate(45deg);
     animation: shake 5.0s linear infinite; */
   }
