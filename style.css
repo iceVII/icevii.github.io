@@ -98,7 +98,7 @@
   }
   
   h1 {
-    transform-origin: top left;
+    transform-origin: center;
     font-size: 72px;
     font-weight: 800;
     text-transform: uppercase;
@@ -147,7 +147,7 @@
   
   button {
     background-color: transparent;
-    transform-origin: top left;
+    transform-origin: bottom left;
     border: 2px solid #ffffff;
     color: #ffffff;
     padding: 15px 32px;
