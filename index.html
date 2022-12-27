@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Cool Website!!!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Welcome to My Cool Website</h1>
-    <p>This is my cool website, where I share information about my favorite things.</p>
-    <p>
-      Cats
-      Video games
-      Books
-    </p>
-    <button onclick="alert('Hello, world!')">Click me</button>
-    <button onclick="alert('Hello, world!')">Click me</button>
-    <button onclick="alert('Hello, world!')">Click me</button>
 
-    <script>
-      var images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-      var currentImage = 0;
-      
-      function changeBackground() {
-        document.body.style.backgroundImage = "url('" + images[currentImage] + "')";
-        currentImage = (currentImage + 1) % images.length;
-      }
-      setInterval(changeBackground, 15000);
-    </script>
+<head>
+  <title>My Cool Website!!!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  </body>
+<body>
+  <h1>Welcome to My Cool Website</h1>
+  <p>This is my cool website, where I share information about my favorite things.</p>
+  <p>
+    Cats
+    Video games
+    Books
+  </p>
+  <button onclick="alert('Hello, world!')">Click me</button>
+  <button onclick="alert('Hello, world!')">Click me</button>
+  <button onclick="alert('Hello, world!')">Click me</button>
+
+  <script>
+    // var images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+    // var currentImage = 0;
+
+    var imageURLs = ["image1.jpg", "image2.jpg", "image3.jpg"];
+    var imagesrc = new Array();
+
+    for (var i = 0; i < imageURLs.length; i++) {
+      var image = new window.Image();
+      image.onload = function () {
+        console.log("Image has finished loading");
+        imagesrc.push(image.src = imageURLs[i]);
+      };
+    }
+
+    function changeBackground() {
+      document.body.style.backgroundImage = "url('" + imagesrc[currentImage] + "')";
+      currentImage = (currentImage + 1) % imagesrc.length;
+    }
+    setInterval(changeBackground, 15000);
+
+    // function changeBackground() {
+    //   document.body.style.backgroundImage = "url('" + images[currentImage] + "')";
+    //   currentImage = (currentImage + 1) % images.length;
+    // }
+    //setInterval(changeBackground, 15000);
+  </script>
+
+</body>
+
 </html>
